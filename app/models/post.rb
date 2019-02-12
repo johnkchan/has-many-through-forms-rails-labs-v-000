@@ -7,8 +7,6 @@ class Post < ActiveRecord::Base
 
 
 
-
-
   def categories_attributes=(category_attributes)
      category_attributes.values.each do |c_a|
        category = Category.find_or_create_by(c_a)
